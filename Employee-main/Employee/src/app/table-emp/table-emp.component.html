@@ -1,0 +1,30 @@
+<section>
+  <div class="table-div">
+    <h3>Employees Details</h3>
+    <table  class="table">
+      <thead>
+        <tr>
+          <th scope="col">Id</th>
+          <th scope="col">Name</th>
+          <th scope="col">Role</th>
+          <th scope="col">Salary</th>
+          <th scope="col">Location</th>
+          <th scope="col">Operation</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let emp of employees |async">
+          <td>{{emp.id}}</td>
+          <td>{{emp.name}}</td>
+          <td>{{emp.role}}</td>
+          <td>{{emp.salary}}</td>
+          <td>{{emp.location}}</td>
+          <td><button class="btn btn-danger" (click)="deleteEmp(emp.id)">Delete</button></td>
+        </tr>
+      </tbody><pre></pre>
+      <button type="button"  class="btn btn-secondary" routerLink="/home" style="padding: 10px 40px;">Back</button>
+    </table>
+    
+    </div>
+  
+</section>

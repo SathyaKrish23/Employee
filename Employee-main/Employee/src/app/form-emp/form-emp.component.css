@@ -1,0 +1,28 @@
+section{
+    width: 100%;
+    height: 100vh;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   background-image: url(../../assets/recruit-3236547_1920.jpg); 
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: cover; 
+
+}
+
+.form-div{
+    padding: 5%;
+    border: 3px solid white;
+    border-radius: 5px;
+    background:linear-gradient(to bottom, #dee8ff 0%,  rgb(5, 153, 116) 100%);   
+    
+   
+}
+form input{
+    text-transform: capitalize;
+}
+button{
+    padding: 10px 40px ;
+}
